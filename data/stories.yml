@@ -1,0 +1,72 @@
+version: "3.1"
+
+stories:
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: ask definition path
+  steps:
+  - intent: ask_definition
+  - action: utter_gdm_definition
+
+- story: ask gdm path
+  steps:
+  - intent: ask_gdm
+  - action: utter_gdm_definition
+
+- story: ask nutrition path
+  steps:
+  - intent: ask_nutrition
+  - action: action_retrieve_nutrition
+
+- story: ask diet detail path
+  steps:
+  - intent: ask_diet_detail
+  - action: action_retrieve_nutrition
+
+- story: ask exercise path
+  steps:
+  - intent: ask_exercise
+  - action: action_retrieve_nutrition
+
+- story: ask medical advice path
+  steps:
+  - intent: ask_medical_advice
+  - action: action_retrieve_nutrition
+
+- story: ask diet summary
+  steps:
+  - intent: ask_diet
+  - action: action_retrieve_nutrition
+
+- story: ask OGTT info
+  steps:
+  - intent: ask_ogtt_info
+  - action: utter_ogtt_info
+
+- story: report PPBS
+  steps:
+  - intent: report_ppbs
+  - action: action_retrieve_nutrition
+
+- story: chitchat empathy
+  steps:
+  - intent: chitchat
+  - action: utter_ask_for_question
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask when to test
+  steps:
+  - intent: ask_when_to_test
+  - action: utter_ogtt_info
+
+- story: Respond to feelings
+  steps:
+    - intent: chitchat_feeling
+    - action: action_generate_empathy

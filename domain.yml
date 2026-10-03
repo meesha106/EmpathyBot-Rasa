@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_definition
+  - ask_nutrition
+  - ask_diet_detail
+  - ask_exercise
+  - ask_medical_advice
+  - chitchat
+  - ask_gdm
+  - ask_ogtt_info
+  - ask_diet
+  - report_ppbs
+  - chitchat_feeling
+  - ask_when_to_test
+
+entities:
+  - blood_sugar
+  - gestation_week
+
+slots:
+  last_question:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Hello! I’m your Gestational Diabetes assistant — I can answer nutrition and care questions. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Take care — keep monitoring your sugar and follow up with your doctor. Goodbye!"
+
+  utter_ask_for_question:
+    - text: "Tell me your question about diet or GDM (for example: 'can I eat rice?' or 'sample meal plan for 2000 kcal')."
+
+  utter_fallback:
+    - text: "I’m sorry — I didn’t understand that. Could you rephrase?"
+
+  utter_gdm_definition:
+    - text: "Gestational Diabetes Mellitus (GDM) is a condition where a woman develops high blood sugar during pregnancy."
+
+  utter_ogtt_info:
+    - text: "The Oral Glucose Tolerance Test (OGTT) is usually done between 24–28 weeks of pregnancy to screen for GDM."
+
+actions:
+  - action_retrieve_nutrition
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_for_question
+  - utter_fallback
+  - utter_gdm_definition
+  - utter_ogtt_info
+  - action_generate_empathy
+
+
+
+
+
+
+

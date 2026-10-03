@@ -1,0 +1,9 @@
+venv_rasa/
+.rasa/
+models/
+model/
+__pycache__/
+*.pyc
+.env
+credentials.yml
+.DS_Store

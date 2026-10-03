@@ -1,0 +1,116 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - hi there
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - take care
+
+- intent: ask_definition
+  examples: |
+    - define gdm
+    - what is gestational diabetes
+    - explain gdm
+    - tell me about gestational diabetes
+    - what does GDM mean
+
+- intent: ask_nutrition
+  examples: |
+    - can I eat rice?
+    - are sweets allowed?
+    - suggest a diet for gestational diabetes
+    - what foods should I avoid
+    - what should I eat
+    - any recommendations for GDM diet
+
+- intent: ask_diet_detail
+  examples: |
+    - give me a sample meal plan for 2000 kcal
+    - show exchange list
+    - carbohydrate serve sizes
+    - detailed diet plan
+    - meal breakdown for GDM
+
+- intent: ask_exercise
+  examples: |
+    - can I do yoga?
+    - is walking safe?
+    - how much exercise should I do
+    - recommended exercises for GDM
+    - is swimming okay?
+
+- intent: ask_medical_advice
+  examples: |
+    - can I skip glucose test?
+    - do I need insulin?
+    - when should I visit doctor?
+    - what medication is recommended?
+    - signs that need medical attention
+
+- intent: chitchat
+  examples: |
+    - how are you?
+    - what’s up?
+    - how’s it going?
+    - tell me a joke
+    - hi bot
+
+- intent: ask_gdm
+  examples: |
+    - what is gdm
+    - explain gdm
+    - define gestational diabetes
+    - tell me about GDM
+    - what does GDM mean
+
+- intent: ask_ogtt_info
+  examples: |
+    - when should I take OGTT
+    - info about glucose test
+    - tell me about OGTT
+    - OGTT guidelines
+    - how is OGTT done
+
+- intent: ask_diet
+  examples: |
+    - give me diet summary
+    - what should I eat today?
+    - dietary recommendations
+    - recommended meals
+    - GDM diet advice
+
+- intent: report_ppbs
+  examples: |
+    - my PPBS is 160
+    - post-meal sugar reading 140
+    - blood sugar report after food
+    - my postprandial glucose is 180
+    - PPBS value today
+
+- intent: chitchat_feeling
+  examples: |
+    - I feel stressed
+    - I am worried
+    - feeling anxious today
+    - I am scared about my sugar levels
+    - feeling low today
+    - i feel dizzy
+
+- intent: ask_when_to_test
+  examples: |
+    - when should I test for gestational diabetes
+    - at what week do I take the glucose test
+    - tell me the timing for OGTT
+    - when is GDM test done
+    - week for glucose tolerance test
+

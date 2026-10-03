@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+- rule: respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: respond to ask definition
+  steps:
+  - intent: ask_definition
+  - action: utter_gdm_definition
+
+- rule: respond to ask gdm
+  steps:
+  - intent: ask_gdm
+  - action: utter_gdm_definition
+
+- rule: provide OGTT info
+  steps:
+  - intent: ask_ogtt_info
+  - action: utter_ogtt_info
+
+- rule: provide diet summary
+  steps:
+  - intent: ask_diet
+  - action: action_retrieve_nutrition
+
+- rule: provide nutrition guidance
+  steps:
+  - intent: ask_nutrition
+  - action: action_retrieve_nutrition
+
+- rule: provide diet detail
+  steps:
+  - intent: ask_diet_detail
+  - action: action_retrieve_nutrition
+
+- rule: provide exercise guidance
+  steps:
+  - intent: ask_exercise
+  - action: action_retrieve_nutrition
+
+- rule: provide medical advice
+  steps:
+  - intent: ask_medical_advice
+  - action: action_retrieve_nutrition
+
+- rule: handle PPBS report
+  steps:
+  - intent: report_ppbs
+  - action: action_retrieve_nutrition
+
+- rule: Respond to feelings
+  steps:
+    - intent: chitchat_feeling
+    - action: action_generate_empathy
+
+- rule: chitchat empathy
+  steps:
+  - intent: chitchat
+  - action: utter_ask_for_question
